@@ -1,0 +1,46 @@
+@import '@/assets/styles/settings/common.scss';
+
+.contact {
+    position: relative;
+    &__header {
+        background: url(../../assets/images/contactUs.jpg) no-repeat center /cover;
+        height: 100vh;
+    }
+    &__title {
+        top: 100px;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+    }
+    &__page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        gap: 10px;
+        &-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            &-img {
+                width: 60px;
+                @include media(500) {
+                    width: 40px;
+                }
+            }
+            &-text {
+                color: black;
+                @include media(500) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

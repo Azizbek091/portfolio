@@ -1,0 +1,191 @@
+@import '@/assets/styles/settings/common.scss';
+
+.main__background {
+    background: url('../../assets/images/bg3.jpg') no-repeat center /cover;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    @include media(500) {
+        height: 120vh;
+    }
+}
+.main__works-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        @include media(460) {
+            padding-top: 220px;
+        }
+    }
+    &-front {
+            display: flex;
+            gap: 50px;
+            @include media(1110) {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &-img {
+                    padding: 4px 4px;
+                    background: white;
+                    width: 120px;
+                }
+                &-text {
+                    background: white;
+                    font-size: 25px;
+                    text-align: center;
+                    color: black;
+                }
+            }
+
+        }
+    &-footer {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 10px;
+        @include media(880) {
+            gap: 5px;
+        }
+        &-text {
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            @include media(880) {
+                width: 220px;
+                font-size: 10px;
+            }
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            padding: 4px 4px;
+            background: black;
+            @include media(880) {
+                width: 80px;
+                padding: 8px 50px;
+            }
+        }
+    }
+}
+.project {
+    background: url(../../assets/images/bg4.jpg) no-repeat center /cover;
+    height: 100%;
+    padding-bottom: 30px;
+    &-title {
+        padding-top: 40px;
+        font-size: 30px;
+        text-align: center;
+        color: #FFF;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        &-item {
+            margin-top: 70px;
+            border-radius: 10px;
+            padding: 10px 10px;
+            width: 480px;
+            height: auto;
+            background: rgb(91, 91, 91);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 400ms;
+            align-items: center;
+            @include media(800) {
+                width: 300px;
+
+            }
+            &:hover {
+                transform: translateY(-10px);
+            }
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+            &-text {
+                color: #FFF;
+                &:hover {
+                    transition: all 300ms;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+.page {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: black;
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &-title {
+            color: white;
+        }
+        &-click {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            border-radius: 10px;
+            background: green;
+            padding: 10px 15px;
+            margin: 0 auto;
+            width: 310px;
+            gap: 10px;
+            @include media(500) {
+                width: 150px;
+            }
+            &:hover {
+                transition: all 300ms;
+                background: rgb(0, 79, 0);
+            }
+            &-img {
+                width: 30px;
+            }
+            &-text {
+                color: white;
+                font-size: 20px;
+                line-height: 150%;
+            }
+        }
+    }
+}
