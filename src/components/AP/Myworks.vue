@@ -43,23 +43,23 @@
     <footer class="project">
             <h2 class="project-title">Мои проекты</h2>
         <div class="project__box">
-            <a target="_blank" href="https://azizbek091.github.io/go-trip" class="project__box-item">
+            <a target="_blank" href="https://azizbeksuper.github.io/go-trip/" class="project__box-item">
                 <img :src="goTrip" alt="" class="project__box-item-img">
                 <h2 class="project__box-item-text">Go Trip</h2>
             </a>
-            <a target="_blank" href="https://azizbek091.github.io/airpods" class="project__box-item">
+            <a target="_blank" href="https://azizbeksuper.github.io/airpods/" class="project__box-item">
                 <img :src="airPods" alt="" class="project__box-item-img">
                 <h2 class="project__box-item-text">Airpods</h2>
             </a>
-            <a target="_blank" href="https://azizbek091.github.io/nike-original" class="project__box-item">
+            <a target="_blank" href="https://azizbeksuper.github.io/nike-original/" class="project__box-item">
                 <img :src="nike" alt="" class="project__box-item-img">
                 <h2 class="project__box-item-text">Nike</h2>
             </a>
-            <a target="_blank" href="https://azizbek091.github.io/grayson18" class="project__box-item">
+            <a target="_blank" href="https://azizbeksuper.github.io/grayson18/" class="project__box-item">
                 <img :src="grayson" alt="" class="project__box-item-img">
                 <h2 class="project__box-item-text">Grayson</h2>
             </a>
-            <a target="_blank" href="https://azizbek091.github.io/TOTEMBO" class="project__box-item">
+            <a target="_blank" href="https://azizbeksuper.github.io/TOTEMBO/" class="project__box-item">
                 <img :src="totembo" alt="" class="project__box-item-img">
                 <h2 class="project__box-item-text">TOTEMBO</h2>
             </a>
